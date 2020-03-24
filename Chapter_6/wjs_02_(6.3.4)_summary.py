@@ -6,17 +6,17 @@
 # these new words and meanings should automatically be included in the output.
 
 
-# python_words = {
-#     "for": "循环",
-#     "in": "判断是否存在",
-#     "if": "判断",
-#     "=": "赋值",
-#     "!=": "不等",
-#     "==": "判断是否相等",
-# }
-#
-# for words, means in python_words.items():
-#     print("'" + words + "'的意义是: " + means)
+python_words = {
+    "for": "循环",
+    "in": "判断是否存在",
+    "if": "判断",
+    "=": "赋值",
+    "!=": "不等",
+    "==": "判断是否相等",
+}
+
+for words, means in python_words.items():
+    print("'" + words + "'的意义是: " + means)
 
 
 # Page-93（6-5）
@@ -54,20 +54,20 @@
 # print a message inviting them to take the poll.
 
 
-favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'ruby',
-    'phil': 'python',
-    }
-
-coders = ["jen", "sarah", "edward", "phil", "Jason", "Tom", "Harry"]
-
-for coder in coders:
-    if coder.lower() in favorite_languages.keys():
-        print(str(coder.lower()) + " thanking them for responding")
-    else:
-        print(str(coder.lower()) + " inviting them to take the poll")
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python',
+#     }
+#
+# coders = ["jen", "sarah", "edward", "phil", "Jason", "Tom", "Harry"]
+#
+# for coder in coders:
+#     if coder.lower() in favorite_languages.keys():
+#         print(str(coder.lower()) + " thanking them for responding")
+#     else:
+#         print(str(coder.lower()) + " inviting them to take the poll")
 
 
 
