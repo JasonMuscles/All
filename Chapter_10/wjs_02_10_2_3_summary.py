@@ -22,23 +22,54 @@
 # line in the file.
 
 
-file_path = "guest_book.txt"
+# file_path = "guest_book.txt"
+#
+# print("Enter:'quit' when you are finished.")
+#
+# while True:
+#     user_name = input("input you're name:\n")
+#     if user_name == "quit":
+#         break
+#
+#     else:
+#         with open(file_path, "a") as file_object:
+#             file_object.write(user_name + "\n")
+#             print(user_name + " you've been added to the guest book.")
 
-print("Enter:'quit' when you are finished.")
 
-while True:
-    user_name = input("input you're name:\n")
-    if user_name == "quit":
-        break
-
-    else:
-        with open(file_path, "a") as file_object:
-            file_object.write(user_name + "\n")
-            print(user_name + " you've been added to the guest book.")
-
-
-# Page-172（10-4）
+# Page-172（10-5）
 # Write a while loop that asks people why they like programming. Each time someone enters a reason,
 # add their reason to a file that stores all the responses.
+
+
+# file_path = "reason.txt"
+# print("Enter:'quit'when you are finished!")
+#
+# while True:
+#     reason = input("why are you like programming?\n")
+#     if reason == "quit":
+#         break
+#     else:
+#         with open(file_path, "a") as file_object:
+#             file_object.write(reason + "\n")
+
+
+# Page-172（10-6）
+# One common problem when prompting for numerical input occurs when people provide text instead of numbers. When you
+# try to convert the input to an int, you’ll get a ValueError. Write a program that prompts for two numbers.
+# Add them together and print the result. Catch theTypeError if either input value is not a number,
+# and print a friendly error message.
+# Test your program by entering two numbers and then by entering some text instead of a number.
+
+
+
+
+
+
+
+
+
+
+
 
 
