@@ -27,26 +27,93 @@
 # if they make a mistake and enter text instead of a number.
 
 
-print("Enter:'quit' when you are finished!")
+# print("Enter:'quit' when you are finished!")
+#
+# while True:
+#     try:
+#         num_a = input("please input number a : ")
+#         if num_a == "quit":
+#             break
+#
+#         num_a = int(num_a)
+#
+#         num_b = input("please input number b : ")
+#         if num_b == "quit":
+#             break
+#
+#         num_b = int(num_b)
+#
+#     except ValueError:
+#         print("please input right number! ")
+#
+#     else:
+#         count = num_a + num_b
+#         print(str(num_a) + " + " + str(num_b) + " = " + str(count))
 
-while True:
+
+# Page-179（10-8）
+# Make two files, cats.txt and dogs.txt. Store at least three names of cats in the first file and three names of dogs
+# in the second file. Write a program that tries to read these files and print the contents of the file to the screen.
+# Wrap your code ina try-except block to catch the File Not Found error, and print a friendly message if a file is
+# missing.Move one of the files to a different location on your system, and make sure the code in the except block
+# executes properly.
+
+
+# files_name = ["cats.txt", "dogs.txt"]
+#
+#
+# def files(file_name):
+#
+#     try:
+#         with open(file_name) as file_object:
+#             lines = file_object.readlines()
+#
+#     except FileNotFoundError:
+#         msg = "Sorry! '" + file_name + "' does not exist."
+#         print(msg)
+#
+#     else:
+#         for line in lines:
+#             print(line.rstrip())
+#
+#
+# for f in files_name:
+#     files(f)
+# ===============================================================================================
+
+# file_names = ["cats.txt", "dogs.txt"]
+#
+# for file_name in file_names:
+#     print("Read file : " + file_name)
+#     try:
+#         with open(file_name) as file_object:
+#             contents = file_object.read()
+#
+#     except FileNotFoundError:
+#         msg = "Sorry! '" + file_name + "' does not exist.\n"
+#         print(msg)
+#
+#     else:
+#         print(contents + "\n")
+
+
+# Page-180（10-8）
+# Modify your except block in Exercise 10-8 to fail silently if either file is missing.
+
+
+file_names = ["cats.txt", "dogs.txt"]
+
+for file_name in file_names:
+    print("Read file : " + file_name)
     try:
-        num_a = int(input("please input number a : "))
-        if num_a == "quit":
-            break
+        with open(file_name) as file_object:
+            contents = file_object.read()
 
-        num_b = int(input("please input number b : "))
-        if num_b == "quit":
-            break
-
-    except ValueError:
-        print("please input right number! ")
+    except FileNotFoundError:
+        pass
 
     else:
-        count = num_a + num_b
-        print(str(num_a) + " + " + str(num_b) + " = " + str(count))
-
-
+        print(contents + "\n")
 
 
 
