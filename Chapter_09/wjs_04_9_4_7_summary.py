@@ -2,7 +2,7 @@
 # Using your latest Restaurant class, store it in a module. Make a separate file that importsRestaurant. Make a
 # Restaurant instance, and call one of Restaurant’s methods to show that the import statement is working properly.
 
-# from Chapter_9.wjs_03_9_3_6_summary import Restaurant as R
+# from Chapter_09.wjs_03_9_3_6_summary import Restaurant as R
 #
 # restaurant = R("Jason", "Beef")
 #
@@ -15,7 +15,7 @@
 # a separate file, make an Admin instance, and call show_privileges() to show that everything is working correctly.
 
 
-from Chapter_9.wjs_03_9_3_6_summary import Admin
+from Chapter_09.wjs_03_9_3_6_summary import Admin
 admin = Admin("jason", "wang")
 admin.describe_user()
 admin.privileges.privileges = [
@@ -31,7 +31,7 @@ admin.privileges.show_privileges()
 # file, create an Admin instance and call show_privileges() to show that everything is still working correctly.
 
 
-from Chapter_9.wjs_03_9_3_6_summary import Admin
+from Chapter_09.wjs_03_9_3_6_summary import Admin
 admin = Admin("jason", "wang")
 admin.describe_user()
 admin.privileges.privileges = [
